@@ -1,0 +1,17 @@
+# Never commit secrets or provider credentials.
+secrets/
+*.key
+*.pem
+*.p12
+.env
+.env.*
+auth.json
+credentials*
+hosts.yml
+*.token
+*.secret
+
+# Local scratch
+.DS_Store
+*.swp
+*.tmp

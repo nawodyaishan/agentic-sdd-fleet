@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "fleet": "personal",
+  "preset": "current",
+  "instances": {
+    "sdd-architecture-advisor": {
+      "source": "agent:sdd-architecture-advisor",
+      "model": "9router/ag/claude-sonnet-5-5-high",
+      "enabled": true
+    },
+    "sdd-architecture-review-9r": {
+      "source": "agent:sdd-architecture-review-9r",
+      "model": "9router/ag/claude-opus-5-5-high",
+      "enabled": true
+    },
+    "sdd-code-review-9r": {
+      "source": "agent:sdd-code-review-9r",
+      "model": "9router/ag/claude-opus-5-5-high",
+      "enabled": true
+    },
+    "sdd-debug-diagnose": {
+      "source": "agent:sdd-debug-diagnose",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "enabled": true
+    },
+    "sdd-docs-worker": {
+      "source": "agent:sdd-docs-worker",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "enabled": true
+    },
+    "sdd-implement-1": {
+      "source": "preset:sdd-implement-1",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "enabled": true
+    },
+    "sdd-implement-2": {
+      "source": "preset:sdd-implement-2",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "enabled": true
+    },
+    "sdd-implement-9r-1": {
+      "source": "preset:sdd-implement-1",
+      "model": "9router/ag/gemini-4-hydrogen-xhigh",
+      "enabled": true
+    },
+    "sdd-implement-9r-2": {
+      "source": "preset:sdd-implement-2",
+      "model": "9router/ag/claude-sonnet-5-5-high",
+      "enabled": true
+    },
+    "sdd-implement-9r-cheap-1": {
+      "source": "preset:sdd-implement-1",
+      "model": "9router/ag/gemini-3.8-flash-medium",
+      "enabled": true
+    },
+    "sdd-implement-9r-cheap-2": {
+      "source": "preset:sdd-implement-2",
+      "model": "9router/ag/gemini-4-argon-high",
+      "enabled": true
+    },
+    "sdd-implement-free-1": {
+      "source": "preset:sdd-implement-1",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "enabled": true
+    },
+    "sdd-implement-free-2": {
+      "source": "preset:sdd-implement-2",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "enabled": true
+    },
+    "sdd-lightweight": {
+      "source": "agent:sdd-lightweight",
+      "model": "opencode/beam-free",
+      "enabled": true
+    },
+    "sdd-openai-architect": {
+      "source": "agent:sdd-openai-architect",
+      "model": "openai/gpt-6.1-sol",
+      "enabled": true
+    },
+    "sdd-openai-implement": {
+      "source": "agent:sdd-openai-implement",
+      "model": "openai/gpt-6.1-terra",
+      "enabled": true
+    },
+    "sdd-orchestrator": {
+      "source": "agent:sdd-orchestrator",
+      "enabled": true
+    },
+    "sdd-plan-9r": {
+      "source": "agent:sdd-plan-9r",
+      "model": "9router/ag/claude-opus-5-5-high",
+      "enabled": true
+    },
+    "sdd-research-librarian": {
+      "source": "agent:sdd-research-librarian",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "enabled": true
+    },
+    "sdd-review-verification-1": {
+      "source": "agent:sdd-review-verification-1",
+      "model": "opencode-go/glm-5.3-flash",
+      "enabled": true
+    },
+    "sdd-review-verification-2": {
+      "source": "agent:sdd-review-verification-2",
+      "model": "opencode/beam-free",
+      "enabled": true
+    },
+    "sdd-spec-9r": {
+      "source": "agent:sdd-spec-9r",
+      "model": "9router/ag/claude-opus-5-5-high",
+      "enabled": true
+    },
+    "sdd-test-design": {
+      "source": "agent:sdd-test-design",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "enabled": true
+    },
+    "sdd-test-implement-1": {
+      "source": "preset:sdd-test-implement-1",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "enabled": true
+    },
+    "sdd-test-implement-2": {
+      "source": "preset:sdd-test-implement-2",
+      "model": "opencode/deepseek-v4.1-flash-free",
+      "enabled": true
+    },
+    "sdd-visual-inspector": {
+      "source": "agent:sdd-visual-inspector",
+      "model": "opencode/glm-5.3-flash-free",
+      "enabled": true
+    },
+    "vision": {
+      "source": "agent:sdd-visual-inspector",
+      "model": "opencode-go/glm-5.3-flash",
+      "enabled": true
+    }
+  }
+}

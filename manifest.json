@@ -1,0 +1,154 @@
+{
+  "format": 1,
+  "source": "~/.config/opencode/agents",
+  "tool": {
+    "name": "asdx-core",
+    "version": "v0.10.0",
+    "commit": "f7a3314"
+  },
+  "pack": {
+    "repository": "agentic-sdd",
+    "commit": "f559872"
+  },
+  "fleetConfig": {
+    "path": "fleet.json",
+    "sha256": "fbda2aca2de330cfffe9df57222596e990079ab1d3af46b3611c93cf695d32ef"
+  },
+  "agents": [
+    {
+      "path": "agents/sdd-architecture-advisor.md",
+      "sha256": "4fee088caf5da4415f4a7e866e1f33b8ec78d18df556c381eb19a61a2ad7b38a",
+      "bytes": 2331
+    },
+    {
+      "path": "agents/sdd-architecture-review-9r.md",
+      "sha256": "b4b467527e8c3777b7a52859625bb6067e09c6ef93b1afb5d9e832fef06aa612",
+      "bytes": 2552
+    },
+    {
+      "path": "agents/sdd-code-review-9r.md",
+      "sha256": "332453219d006edcb909e5fae22eaae64b9bd34f88c9ec409d57913fd76fea91",
+      "bytes": 2575
+    },
+    {
+      "path": "agents/sdd-debug-diagnose.md",
+      "sha256": "fa09a5961380039f69d04e4eb7de82c1ae990d7e9153f20a9905639deceb627d",
+      "bytes": 1925
+    },
+    {
+      "path": "agents/sdd-docs-worker.md",
+      "sha256": "1640d057e8695bcd4339e195651c572c92ce125d1dc4b8117e215e1bbd26014c",
+      "bytes": 1932
+    },
+    {
+      "path": "agents/sdd-implement-1.md",
+      "sha256": "ad0eb00ab4164dcca7e028458d5691cb85c793f27bcd6995702f45946f86f901",
+      "bytes": 2405
+    },
+    {
+      "path": "agents/sdd-implement-2.md",
+      "sha256": "7c984e25bcd4a788894025a1241dc35ff92b8c0b142dba76e7d14d760f09df26",
+      "bytes": 2304
+    },
+    {
+      "path": "agents/sdd-implement-9r-1.md",
+      "sha256": "51087596d5a8d70d88d060c7e2ca9ed8ce6cf2fed19cdae1a76a7a24e44db553",
+      "bytes": 1642
+    },
+    {
+      "path": "agents/sdd-implement-9r-2.md",
+      "sha256": "6cfd7fff44c4e665a757d0bfe5b8d741b5abf82ef3e8b859774fdb10990c51e4",
+      "bytes": 1482
+    },
+    {
+      "path": "agents/sdd-implement-9r-cheap-1.md",
+      "sha256": "94dac2f92e342d9064d33c67d8d850ef58a271ea7f31ed6b386612e5305ac434",
+      "bytes": 1740
+    },
+    {
+      "path": "agents/sdd-implement-9r-cheap-2.md",
+      "sha256": "668e4f41a0be37a16812686bfcb0b35c6033e9b18b286f955a395c4290089185",
+      "bytes": 1625
+    },
+    {
+      "path": "agents/sdd-implement-free-1.md",
+      "sha256": "44782edc1835ebd8bb378471d3c781a7a8c8cf5f0ab4702b915dfd13602ceb75",
+      "bytes": 1716
+    },
+    {
+      "path": "agents/sdd-implement-free-2.md",
+      "sha256": "11ac5170444e17af9f68c7247fd23e26a98ea14a479ca579d75670d0b1eb2606",
+      "bytes": 1682
+    },
+    {
+      "path": "agents/sdd-lightweight.md",
+      "sha256": "dbe984792a0e902d57069c0b526318047903436ec48ab244baf0b54ad6d4d715",
+      "bytes": 2011
+    },
+    {
+      "path": "agents/sdd-openai-architect.md",
+      "sha256": "391f789348b57c91ed7360f40f6096c0257f0ab4c850434a4f16437cfe8c4eda",
+      "bytes": 3305
+    },
+    {
+      "path": "agents/sdd-openai-implement.md",
+      "sha256": "01ecee280229ba65a36e94bd35cbb5d84fd69c23a14be8992407bc9ef816ac80",
+      "bytes": 2856
+    },
+    {
+      "path": "agents/sdd-orchestrator.md",
+      "sha256": "7a8028b708361b5901020ecd78d566897fb94af946512e951da11aabeac73bc0",
+      "bytes": 1614
+    },
+    {
+      "path": "agents/sdd-plan-9r.md",
+      "sha256": "579776eaf6f27bd328b3b90d6a1dc209b0a9eaaf07b3455399a6671c75500732",
+      "bytes": 964
+    },
+    {
+      "path": "agents/sdd-research-librarian.md",
+      "sha256": "3fd4cf29f8f409915878571a722b94b9ebf9f6f0fffa229e4421d8e30dda1c82",
+      "bytes": 2503
+    },
+    {
+      "path": "agents/sdd-review-verification-1.md",
+      "sha256": "03fbc6ddf5a3f052646be85097b3f59793115404cb74052594da49b48edcbe4b",
+      "bytes": 2248
+    },
+    {
+      "path": "agents/sdd-review-verification-2.md",
+      "sha256": "392f0c57900613661b72e46a56bb9491f5121950efb72f6ef8787c2396c783c4",
+      "bytes": 2409
+    },
+    {
+      "path": "agents/sdd-spec-9r.md",
+      "sha256": "b84b7a1eb4572d9342fb390c74ff6324b37a78f9ea096b414fb1ea1863f10e91",
+      "bytes": 961
+    },
+    {
+      "path": "agents/sdd-test-design.md",
+      "sha256": "546647627754016b9f0fcb28b58e03a8b7757ccb7e85792c35fdf4e9bf118324",
+      "bytes": 1931
+    },
+    {
+      "path": "agents/sdd-test-implement-1.md",
+      "sha256": "f85c6984678422dad9c9dd49b3a254dc73d25f972018efa611b55e145b44c68c",
+      "bytes": 2159
+    },
+    {
+      "path": "agents/sdd-test-implement-2.md",
+      "sha256": "7c1b76fb97df695b6aa7b74e4214244adfdc07de43345d5d6cb0388412e21c0a",
+      "bytes": 2113
+    },
+    {
+      "path": "agents/sdd-visual-inspector.md",
+      "sha256": "2b97f7275d86a6c2e42318ff3ae18b9ebddb3e172bf17c1e8bd17371b56ba6b8",
+      "bytes": 1875
+    },
+    {
+      "path": "agents/vision.md",
+      "sha256": "65e8e2374cb71be59d7ce4b3ceed42a76e0b2679fe10b9f44528258d4bab0985",
+      "bytes": 2090
+    }
+  ]
+}
