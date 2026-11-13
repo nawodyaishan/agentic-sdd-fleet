@@ -77,6 +77,47 @@ git diff --stat
 Review the diff before committing. Never add credentials; `opencode.json`,
 `secrets/` and provider tokens are out of scope.
 
+## Use it with the `asdx` TUI
+
+The TUI never scans for a file, so point it at the repository explicitly.
+
+```sh
+asdx --fleet-config ~/github/agentic-sdd-fleet/fleet.json
+```
+
+`asdx-core tui --fleet-config PATH` is the equivalent entry point. If the TUI is
+already open:
+
+1. Open **Install & Manage** (`i` or the hub), then **Fleet Manager** (`f`).
+2. On **Overview**, press `s` and type
+   `/home/<you>/github/agentic-sdd-fleet/fleet.json`.
+3. Press `r` after you edit `fleet.json` in the repo; the source is re-read.
+
+| Key | View | What this repo shows |
+|---|---|---|
+| `1` / `o` | Overview | Source path, 27 configured / 27 enabled / 0 managed |
+| `2` / `p` | Profiles | One row per instance with its current model lane |
+| `3` / `c` | Review | Preview-only plan; every file is a conflict until the fleet is adopted |
+| `4` / `e` | Recovery | Empty until a fleet apply has created a managed backup |
+
+**Expect "unmanaged" and "conflict" on first open.** This repository is a
+backup, not an ownership claim. The installed files carry no fleet provenance,
+so Overview counts 27 `unmanaged` and Review stops with
+`unmanaged file already exists; use --adopt after review`. That is the safe
+default: nothing is written. Taking ownership is a deliberate
+`asdx-core fleet plan --adopt` → reviewed apply, run in a terminal.
+
+What the current build cannot do for you:
+
+- Deployment and restore are **preview only**; the write is disabled.
+- The in-app source editor stages model edits in memory but cannot save
+  `fleet.json`. Edit the file in this repo instead, then press `r`.
+- Clearing an override back to canonical inheritance is a text edit, not a
+  picker action.
+- The TUI makes no Git call. Commit and push from a terminal.
+- The source choice is session-only. There is no stored preference, so either
+  pass `--fleet-config` every launch or retype the path after `s`.
+
 ## Keep it private
 
 Model lanes describe provider routing, paid and free tiers, and local proxy
