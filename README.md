@@ -93,6 +93,14 @@ already open:
    `/home/<you>/github/agentic-sdd-fleet/fleet.json`.
 3. Press `r` after you edit `fleet.json` in the repo; the source is re-read.
 
+When running a local build instead of an installed pair, `asdx` may not be on
+`PATH`. These are the same launch:
+
+```sh
+~/github/agentic-sdd/bin/tui-pair/asdx --fleet-config ~/github/agentic-sdd-fleet/fleet.json
+~/github/agentic-sdd/bin/asdx-core tui --fleet-config ~/github/agentic-sdd-fleet/fleet.json
+```
+
 | Key | View | What this repo shows |
 |---|---|---|
 | `1` / `o` | Overview | Source path, 27 configured / 27 enabled / 0 managed |
