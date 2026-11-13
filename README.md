@@ -1,10 +1,59 @@
 # agentic-sdd-fleet
 
 Personal backup and definition of one OpenCode agent fleet, for use with the
-`asdx-core fleet` commands of [agentic-sdd](https://github.com/nawodyaishan/agentic-sdd).
+`asdx-core fleet` commands of [Agentic SDD](https://github.com/nawodyaishan/agentic-sdd).
 
 This repository holds **configuration only**. It contains no credentials, no
 API keys, no `opencode.json`, and no provider account state.
+
+## Upstream project
+
+This repository is **not** part of Agentic SDD. It is a personal configuration
+backup for that tool's fleet feature. Everything that renders these profiles,
+validates `fleet.json` and writes managed files lives upstream:
+
+- Repository: <https://github.com/nawodyaishan/agentic-sdd> (MIT)
+- Install, macOS: `brew install --cask nawodyaishan/tap/agentic-sdd`
+- Install, Linux: no prebuilt package; build `asdx` and `asdx-core` from source
+  as described in the upstream README
+- Fleet TUI guide: [docs/fleet-manager-tui.md](https://github.com/nawodyaishan/agentic-sdd/blob/main/docs/fleet-manager-tui.md)
+- Fleet CLI feature record: [specs/014-agent-fleet-model-overrides](https://github.com/nawodyaishan/agentic-sdd/tree/main/specs/014-agent-fleet-model-overrides)
+- Canonical source packs: `opencode-pack/agents/`, `opencode-pack/adapters/`,
+  `opencode-pack/presets/free-first/`
+
+What is upstream's and what is personal:
+
+| Item | Origin |
+|---|---|
+| Agent prompt bodies, permissions and role descriptions in `agents/*.md` | Derived from the upstream pack; MIT © 2026 nawodyaishan |
+| Instance IDs, model lanes, enablement choices | Personal |
+| `fleet.json` schema and rendering rules | Upstream `internal/fleet`, `schemaVersion: 1` |
+| Installed profile snapshot and provenance | Captured from this machine |
+
+Version pinning is not decorative. `manifest.json` records tool
+`v0.10.0@f7a3314` and pack `f559872`. Rendering is deterministic only against
+that pack revision: a newer upstream release can change a description, a
+permission block or a prompt body while `fleet.json` stays identical.
+
+Twenty of the 27 profiles map to a canonical upstream source. The other seven
+(`sdd-implement-9r-*`, `sdd-implement-free-*`, `vision`) are local variants with
+no upstream source, which is why they are preserved as a byte snapshot instead
+of being regenerated from `fleet.json`.
+
+Installing the toolkit is the normal prerequisite:
+
+```sh
+asdx-core apply --with-opencode   # installs the canonical 14 profiles
+```
+
+The fleet layer is opt-in and only overrides model bindings and enablement; it
+does not replace the upstream installer.
+
+### License and attribution
+
+The profile content under `agents/` derives from Agentic SDD, MIT License
+© 2026 nawodyaishan. This repository is distributed under the same license; see
+[LICENSE](LICENSE).
 
 ## What is here
 
@@ -126,8 +175,16 @@ What the current build cannot do for you:
 - The source choice is session-only. There is no stored preference, so either
   pass `--fleet-config` every launch or retype the path after `s`.
 
-## Keep it private
+## Why private (and how to change it)
 
 Model lanes describe provider routing, paid and free tiers, and local proxy
-usage. That is personal infrastructure metadata, so this repository is
-intentionally private.
+usage. That is personal infrastructure metadata, so the default is private.
+Nothing here is a credential, so publishing is safe if you accept that
+exposure — the license and attribution above are already in place:
+
+```sh
+gh repo edit --visibility public --accept-visibility-change-consequences
+```
+
+Going public is easy to reverse in the UI but cannot recall clones or forks,
+which is why the repository starts closed.
