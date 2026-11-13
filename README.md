@@ -14,6 +14,8 @@ validates `fleet.json` and writes managed files lives upstream:
 
 - Repository: <https://github.com/nawodyaishan/agentic-sdd> (MIT)
 - Install, macOS: `brew install --cask nawodyaishan/tap/agentic-sdd`
+  (the canonical `asdx` / `asdx-core` names ship from **v0.11.0**; earlier
+  releases contained only the legacy `agentic-sdd` / `agentic-sdd-tui` pair)
 - Install, Linux: no prebuilt package; build `asdx` and `asdx-core` from source
   as described in the upstream README
 - Fleet TUI guide: [docs/fleet-manager-tui.md](https://github.com/nawodyaishan/agentic-sdd/blob/main/docs/fleet-manager-tui.md)
